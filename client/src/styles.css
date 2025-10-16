@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* subtle motion background */
+body {
+  background: radial-gradient(circle at 10% 20%, rgba(99,102,241,0.06), transparent 10%),
+              radial-gradient(circle at 80% 80%, rgba(16,185,129,0.04), transparent 15%);
+  background-attachment: fixed;
+  animation: floatBG 18s linear infinite;
+}
+
+@keyframes floatBG {
+  0% { background-position: 0 0, 100% 100%; }
+  50% { background-position: 10% 20%, 90% 80%; }
+  100% { background-position: 0 0, 100% 100%; }
+}
+
+/* small card style */
+.card {
+  @apply bg-white rounded-2xl p-6 shadow-md;
+}
