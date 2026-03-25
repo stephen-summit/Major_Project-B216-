@@ -21,7 +21,7 @@ AI/NLP: Intelligent response system
 🔹 Home Page
 ![image alt](https://github.com/stephen-summit/Major_Project-B216-/blob/main/2.png)
 🔹 Chat Interface
-![image alt]()
+![image alt](https://github.com/stephen-summit/Major_Project-B216-/blob/main/3.png)
 🔹 Mood Analysis
 ![image alt]()
 ⚠️ Create a folder named screenshots in your repo and add images with these names.
