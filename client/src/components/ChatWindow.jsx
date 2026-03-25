@@ -47,6 +47,8 @@ export default function ChatWindow({ apiBase, assistantType }) {
         setMessages(prev => [...prev, { role:'assistant', text: resp.assistantText }]);
       } else if (resp.chat && resp.chat.messages) {
         setMessages(resp.chat.messages.map(m => ({role: m.role, text: m.text})));
+      } else if (resp.error) {
+        setMessages(prev => [...prev, { role:'assistant', text: `Server error: ${resp.error}` }]);
       } else {
         setMessages(prev => [...prev, { role:'assistant', text: 'Sorry — no response.' }]);
       }

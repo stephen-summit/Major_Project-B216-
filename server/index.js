@@ -12,9 +12,10 @@ const User = require('./models/User');
 
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 if (!MONGO_URI) throw new Error("MONGO_URI is required in env");
+if (!OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY is required in env");
 
 initFirebaseAdmin();
 
