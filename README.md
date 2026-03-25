@@ -19,7 +19,7 @@ Database: MongoDB
 AI/NLP: Intelligent response system
 📸 Screenshots
 🔹 Home Page
-![image alt]()
+![image alt](https://github.com/stephen-summit/Major_Project-B216-/blob/main/2.png)
 🔹 Chat Interface
 ![image alt]()
 🔹 Mood Analysis
